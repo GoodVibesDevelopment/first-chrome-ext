@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "First chrome ext",
+  "description": "Green  FB.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "GoodVibeS!"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
